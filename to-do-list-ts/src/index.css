@@ -1,0 +1,112 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 6rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-bottom: 1em;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+input {
+  margin: 1.6rem 0;
+  padding: 1rem 0.6rem;
+  font-size: large;
+  border: 10px;
+}
+
+input:focus-visible,
+input:focus {
+  outline: #646cff auto 1px;
+}
+
+.title {
+  width: 30%;
+  min-width: 200px;
+}
+
+
+.description {
+  height: 8rem;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  resize: vertical;
+  align-items: flex-start;
+}
+
+
+.submit-btn {
+  width: 10rem
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cell {
+  background: rgba(100, 108, 255, 0.6);
+  padding: 0.1em 1.2em;
+  border-radius: 8px;
+  width: 200px;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.head {
+  display: flex;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 1.6em;
+  height: fit-content;
+  overflow-wrap: break-word;
+}
